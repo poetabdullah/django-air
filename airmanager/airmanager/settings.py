@@ -73,7 +73,7 @@ WSGI_APPLICATION = 'airmanager.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
-
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -82,6 +82,21 @@ DATABASES = {
         'PASSWORD':'f2BFc6egG*AB1BFDfCDAFbcc5gD4b4GB',
         'HOST':'viaduct.proxy.rlwy.net',
         'PORT':'31063'
+    }
+}
+'''
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'sql_server.pyodbc',
+        'NAME': 'AirportDB',   # Replace with your SQL Server database name
+        'USER': 'sa',          # Replace with your SQL Server username
+        'PASSWORD': '',        # Replace with your SQL Server password (leave empty if none)
+        'HOST': 'DESKTOP-EJ72FML\SQLEXPRESS',  # Replace with your SQL Server instance
+        'PORT': '',            # Leave empty for dynamic port or replace with your static port
+        'OPTIONS': {
+            'driver': 'ODBC Driver 18 for SQL Server',  # Update with your SQL Server driver
+        },
     }
 }
 
