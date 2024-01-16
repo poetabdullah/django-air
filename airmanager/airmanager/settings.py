@@ -89,13 +89,13 @@ DATABASES = {
 DATABASES = {
     'default': {
         'ENGINE': 'sql_server.pyodbc',
-        'NAME': 'AirportManageSystem',   # Replace with your SQL Server database name
-        'USER': 'sa',          # Replace with your SQL Server username
-        'PASSWORD': '',        # Replace with your SQL Server password (leave empty if none)
-        'HOST': 'DESKTOP-EJ72FML\SQLEXPRESS',  # Replace with your SQL Server instance
-        'PORT': '',            # Leave empty for dynamic port or replace with your static port
+        'NAME': 'AirportManageSystem',  
+        'USER': 'sa',     
+        'PASSWORD': '',        
+        'HOST': 'DESKTOP-EJ72FML\SQLEXPRESS',
+        'PORT': '',       
         'OPTIONS': {
-            'driver': 'ODBC Driver 148 for SQL Server',  # Update with your SQL Server driver
+            'driver': 'ODBC Driver 18 for SQL Server',  
         },
     }
 }
