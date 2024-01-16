@@ -88,11 +88,11 @@ DATABASES = {
 
 DATABASES = {
     'default': {
-        'ENGINE': 'sql_server.pyodbc',
+        'ENGINE': 'mssql',
         'NAME': 'AirportManageSystem',  
         'USER': 'sa',     
         'PASSWORD': '',        
-        'HOST': 'DESKTOP-EJ72FML\SQLEXPRESS',
+        'HOST': 'DESKTOP-EJ72FML\\SQLEXPRESS',
         'PORT': '',       
         'OPTIONS': {
             'driver': 'ODBC Driver 18 for SQL Server',  
